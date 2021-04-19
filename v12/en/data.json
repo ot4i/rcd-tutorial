@@ -65,14 +65,14 @@
             "summary": 
 			{
                 "overviewName": "OVERVIEW",
-                "_overviewComment": "A short description of what happens in this tutorial, and an optional short explanation of the ACE concepts used in this tutorial if necessary for context. What background knowledge must the user have for this to make sense?",
+                "_overviewComment": "A short description of what happens in this tutorial, and an optional short explanation of the concepts used in this tutorial if necessary for context. What background knowledge must the user have for this to make sense?",
                 "sections": 
 				[
                     {
                         "section": "This tutorial demonstrates a simple message flow that receives a deliberately badly formed XML input message over HTTP. When the fail terminal of the HTTPInput node is triggered, a ResetContentDescriptor node is used to re-parse the input message as a BLOB (Binary Large OBject). The scenario demonstrates the ResetContentDescriptor node's ability to associate a new parser with the input message bitstream. This can be helpful in scenarios like the one demonstrated, when input data does not conform to the expected model and so down a fail / catch branch it can be reassociated with a less stringent data model and then used to generate a helpful error message for the consumer of the flow. Note that contrary to some popular misconceptions, the ResetContentDescriptor node does not change the message content, nor does it actually convert the message from one format to another."
                     },
                     {
-                        "section": "The tutorial requires an ACE integration node owned server, or a standalone server."
+                        "section": "The tutorial requires an integration node owned server, or a standalone server."
                     },
                     {
                         "section": "In IBM App Connect Enterprise, an application is a container for all the resources that are required to create a solution. This tutorial provides an application to hold the message flow. There are no other pre-requisites needed by the scenario."
